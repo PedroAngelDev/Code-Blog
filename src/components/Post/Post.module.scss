@@ -1,0 +1,15 @@
+.cardTitle {
+  color: rgb(230, 230, 230);
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.author, .date {
+  color: #fff;
+}
+
+.date {
+  font-style: italic;
+}

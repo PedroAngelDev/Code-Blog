@@ -1,0 +1,44 @@
+{
+  "name": "code-blog",
+  "private": false,
+  "version": "0.0.1",
+  "description": "Un blog de código",
+  "author": "PedroAngelVD <pedro.angel.vd@gmail.com>",
+  "scripts": {
+    "dev": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "gatsby": "^2.32.9",
+    "gatsby-image": "^2.11.0",
+    "gatsby-plugin-gatsby-cloud": "^1.0.2",
+    "gatsby-plugin-image": "^1.0.1",
+    "gatsby-plugin-manifest": "^2.12.1",
+    "gatsby-plugin-offline": "^3.10.2",
+    "gatsby-plugin-react-helmet": "^3.10.0",
+    "gatsby-plugin-sass": "^3.2.0",
+    "gatsby-plugin-sharp": "^2.14.3",
+    "gatsby-source-filesystem": "^2.11.1",
+    "gatsby-transformer-remark": "^3.0.0",
+    "gatsby-transformer-sharp": "^2.12.0",
+    "lodash": "^4.17.21",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.2.0",
+    "reactstrap": "^8.9.0",
+    "sass": "^1.32.8"
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
+  }
+}

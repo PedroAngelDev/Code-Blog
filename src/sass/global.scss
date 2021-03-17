@@ -1,0 +1,42 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+html {
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 10ex;
+}
+
+body {
+  height: 100vh;
+}
+
+a[aria-current="page"] {
+  font-weight: 600;
+  color: #fff;
+}
+
+code {
+  background-color: #343A40;
+  color: #fff;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+pre {
+  code {
+    display: flex;
+    color: #fff;
+  }
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2, h3 {
+    font-size: 1.2rem;
+  }
+}

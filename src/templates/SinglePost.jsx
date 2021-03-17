@@ -4,18 +4,19 @@ import Layout from '../layouts/layout'
 import SEO from '../components/Seo'
 import Img from 'gatsby-image'
 import Tags from '../components/Tags'
-import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { FaFacebook, FaReddit, FaTwitter } from 'react-icons/fa'
 
 const SinglePost = ({ data, pageContext }) => {
   const post = data.markdownRemark.frontmatter
-  const baseUrl = 'https://gatsbytutorial.com.pe/'
+  const baseUrl = 'https://code-blog.pages.dev/'
 
   return (
     <Layout>
       <SEO
         title={post.title}
-        description="Post de Code Blog"
+        description={data.markdownRemark.excerpt}
         keywords={post.tags.join(',')}
+        imageCard={baseUrl + post.image.childImageSharp.fluid.src}
       />
       <div className="d-flex justify-content-center">
         <div className="col-md-8">
@@ -32,15 +33,15 @@ const SinglePost = ({ data, pageContext }) => {
           <div className="d-flex justify-content-center">
             <a
               href={
-                'https://www.linkedin.com/sharing/share-offsite/?url=' +
+                'https://www.facebook.com/sharer/sharer.php?u=' +
                 baseUrl +
                 pageContext.slug
               }
-              className="linkedin m-1"
+              className="facebook m-1"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin size="2rem" color="#0077B0" />
+              <FaFacebook size="2rem" color="#077AE9" />
             </a>
 
             <a
@@ -59,17 +60,20 @@ const SinglePost = ({ data, pageContext }) => {
             >
               <FaTwitter size="2rem" color="#2CA5DA" />
             </a>
+
             <a
               href={
-                'https://www.facebook.com/sharer/sharer.php?u=' +
+                'https://reddit.com/submit?url=' +
                 baseUrl +
-                pageContext.slug
+                pageContext.slug +
+                '&title=' +
+                post.title
               }
-              className="facebook m-1"
+              className="reddit m-1"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebook size="2rem" color="#077AE9" />
+              <FaReddit size="2rem" color="#FF4500" />
             </a>
           </div>
         </div>
@@ -96,6 +100,7 @@ export const postQuery = graphql`
           }
         }
       }
+      excerpt
     }
   }
 `

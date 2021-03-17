@@ -17,7 +17,7 @@ const Footer = () => {
           <div className="d-flex justify-content-center">
             <a
               className="m-1"
-              href="https://facebook.com"
+              href="https://www.facebook.com/pedroangel.vd/"
               target="_blank"
               rel="noreferrer"
             >
@@ -29,7 +29,7 @@ const Footer = () => {
             </a>
             <a
               className="m-1"
-              href="https://instagram.com"
+              href="https://www.instagram.com/pedroangelvd/"
               target="_blank"
               rel="noreferrer"
             >
@@ -41,7 +41,7 @@ const Footer = () => {
             </a>
             <a
               className="m-1"
-              href="https://twitter.com"
+              href="https://twitter.com/PedroAngelVD"
               target="_blank"
               rel="noreferrer"
             >
@@ -53,7 +53,7 @@ const Footer = () => {
             </a>
             <a
               className="m-1"
-              href="https://github.com"
+              href="https://github.com/PedroAngelVD"
               target="_blank"
               rel="noreferrer"
             >
@@ -65,7 +65,7 @@ const Footer = () => {
             </a>
             <a
               className="m-1"
-              href="https://youtube.com"
+              href="https://www.youtube.com/channel/UCvqr-EF2eyMjkjnjNG7NL3g"
               target="_blank"
               rel="noreferrer"
             >
@@ -77,7 +77,7 @@ const Footer = () => {
             </a>
             <a
               className="m-1"
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/pedroangelvd/"
               target="_blank"
               rel="noreferrer"
             >

@@ -10,6 +10,7 @@ const About = () => {
         title="Acerca de"
         keywords="blog, programación, tecnología"
         description="Esta página muestra información del blog."
+        imageCard="https://code-blog.pages.dev/static/a5e1a3d327887810f79f243cd4886616/9a128/post1-blog.jpg"
       />
       <div className="bg-dark text-white text-center py-2 mb-3">
         <img src={logo} alt="logo" style={{ maxWidth: 200 }} />

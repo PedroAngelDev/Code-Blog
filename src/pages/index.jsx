@@ -15,6 +15,7 @@ const IndexPage = () => {
         title="Inicio"
         description="Blog de código"
         keywords="blog, programación, frontend, tecnología"
+        imageCard="https://code-blog.pages.dev/static/a5e1a3d327887810f79f243cd4886616/9a128/post1-blog.jpg"
       />
       <StaticQuery
         query={indexQuery}
